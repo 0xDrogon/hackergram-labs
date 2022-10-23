@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}{% endblock %} - Sign Up
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <center>
+                <form class="form-horizontal" action="register" method=post>
+                    <fieldset>
+                        <legend>Sign Up for Hackergram</legend>
+                        <div class="form-group">
+                            <input type="text" id="username" name="username" class="input-xlarge" placeholder="Username" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="input-xlarge" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="password" name="password" class="input-xlarge" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+            </center>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+{% endblock %}
